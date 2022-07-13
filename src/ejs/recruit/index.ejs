@@ -1,0 +1,225 @@
+<%_
+  var rootPath = data.rootPath;
+  var pageData = data.pages.home;
+_%>
+<%- include("../_components/_head", { rootPath, pageData }) _%>
+<%- include("../_components/_header", { pageData }) _%>
+  <main class="l-main">
+    <!--メインビジュアル-->
+    <section class="p-sub-page-visual">
+      <h1 class="p-sub-page-visual__title--recruit">
+        <p class="p-sub-page-visual__title__en">RECRUIT</p>
+        <p class="p-sub-page-visual__title__ja">募集要項</p>
+      </h1>
+      <div class="p-sub-page-visual__image-content">
+        <img src="/assets/img/recruit.jpg" alt="募集要項">
+      </div>
+    </section>
+     <!--丸あしらい-->
+     <%- include("../_components/_circle", { pageData }) _%>
+    <!--パンくずリスト-->
+    <nav class="p-breadcrumbs">
+      <div class="c-inner">
+        <ol class="p-breadcrumbs__list">
+          <li class="p-breadcrumbs__item">
+            <a href="/index.html">ホーム</a>
+          </li>
+          <li class="p-breadcrumbs__item">
+            <a href="/recruit/">募集要項</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <!--メインコンテンツ-->
+    <section>
+      <div class="c-inner">
+        <!--タブ-->
+        <section class="p-tab">
+          <ul class="p-tab__list">
+            <li class="p-tab__button">新卒採用</li>
+            <li class="p-tab__button">中途採用</li>
+          </ul>
+
+          <div>
+            <table class="c-table c-page-content">
+              <tbody>
+                <!--募集職種-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">募集職種</td>
+                <td class="c-table__data">
+                  <div class="c-table__data__inner">
+                    <h3 class="c-table__data__title">総合職</h3>
+                    <p class="c-table__data__text">
+                      ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    </p>
+                  </div>
+                  <div class="c-table__data__inner">
+                    <h3 class="c-table__data__title">総合職</h3>
+                    <p class="c-table__data__text">
+                      ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <!--雇用形態-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">雇用形態</td>
+                <td class="c-table__data">
+                  ダミーテキスト
+                </td>
+              </tr>
+              <!--業務内容-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">業務内容</td>
+                <td class="c-table__data">
+                  <div class="c-table__data__inner">
+                    <h3 class="c-table__data__title">ダミーテキスト</h3>
+                    <p class="c-table__data__text">
+                      ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    </p>
+                  </div>
+                  <div class="c-table__data__inner">
+                    <h3 class="c-table__data__title">ダミーテキスト</h3>
+                    <p class="c-table__data__text">
+                      ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <!--募集対象-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">募集対象</td>
+                <td class="c-table__data">
+                  <div class="c-table__data__inner">
+                    <h3 class="c-table__data__title">ダミーテキスト</h3>
+                    <p class="c-table__data__text">
+                      ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    </p>
+                  </div>
+                  <div class="c-table__data__inner">
+                    <h3 class="c-table__data__title">ダミーテキスト</h3>
+                    <p class="c-table__data__text">
+                      ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <!--募集人数-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">募集人数</td>
+                <td class="c-table__data">
+                  ダミーテキスト
+                </td>
+              </tr>
+              <!--勤務地-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">勤務地</td>
+                <td class="c-table__data">
+                  ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                </td>
+              </tr>
+              <!--勤務時間-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">勤務時間</td>
+                <td class="c-table__data">
+                  ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                </td>
+              </tr>
+              <!--給与-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">給与</td>
+                <td class="c-table__data">
+                  <div class="c-table__data__inner">
+                    <h3 class="c-table__data__title">ダミーテキスト</h3>
+                    <p class="c-table__data__text">
+                      ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    </p>
+                  </div>
+                  <div class="c-table__data__inner">
+                    <h3 class="c-table__data__title">ダミーテキスト</h3>
+                    <p class="c-table__data__text">
+                      ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <!--諸手当-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">諸手当</td>
+                <td class="c-table__data">
+                  ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                </td>
+              </tr>
+              <!--昇給・賞与-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">昇給・賞与</td>
+                <td class="c-table__data">
+                  ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                </td>
+              </tr>
+              <!--休日・休暇-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">休日・休暇</td>
+                <td class="c-table__data">
+                  ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                  ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                  ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                </td>
+              </tr>
+              <!--待遇・福利厚生-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">待遇・福利厚生</td>
+                <td class="c-table__data">
+                  ミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                </td>
+              </tr>
+              <!--採用実績-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">採用実績</td>
+                <td class="c-table__data">
+                  ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                  ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                  ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                </td>
+              </tr>
+              <!--応募方法-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">応募方法</td>
+                <td class="c-table__data">
+                  <p class="c-table__data__text">
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                  </p>
+                  <p class="c-table__data__text">※詳細は<span><a href="">選考フロー・FAQ</a></span>へ</p>
+                </td>
+              </tr>
+              <!--面接地-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">面接地</td>
+                <td class="c-table__data">
+                  ミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                </td>
+              </tr>
+              <!--問い合わせ-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">問い合わせ</td>
+                <td class="c-table__data">
+                  ミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!--採用情報--> 
+    <%- include("../_components/_recruit", { pageData }) _%>
+    <div class="l-main__line u-sp"></div>
+    <div class="l-main__line u-sp"></div>
+  </main>
+<%- include("../_components/_footer", { pageData }) _%>
+<%- include("../_components/_foot", { rootPath, pageData }) _%>

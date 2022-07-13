@@ -1,0 +1,95 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+.p-culture{
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    background: $sub-color;
+    width: 100%;
+    height: calc(100% - 160px);
+    bottom: 0;
+    z-index: -10;
+    @include mq(md){
+      height: 700px;
+    }
+  }
+  &__wrapper{
+    @include mq(md){
+      display: flex; 
+    }
+    display: block;
+    &__image-content{
+      width: 100%;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "";
+        display: inline-block;
+        background-image: url(/assets/img/recruit2024.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 13.54vw;
+        height: 13.54vw;
+        min-width: 130px;
+        min-height: 130px;
+        top: -15%;
+        left: -100px;
+        z-index: 10;
+      }
+      @include mq(md){
+        height: 700px;
+        max-width: 520px;
+        margin-bottom: 80px;
+      }
+      img{
+        object-fit: cover;
+        height: 100%;
+        object-position: left;
+      }
+    }
+    &__text-content{
+      width: 100%;
+      padding: 40px 0;
+      &::after{
+        position: absolute;
+        content: "";
+        background-color: $main-color;
+        width: 160px;
+        height: 2px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 0;
+        right: 0;
+        @include mq(md){
+          width: 260px;
+          top: auto;
+          bottom: 0;
+        }
+      }
+      @include mq(md){
+        padding: 120px 0 6.6666% 80px;
+        flex: 1;
+      }
+      &__text{
+        font-size: 1.6rem;
+        letter-spacing: $letter-spacing;
+        line-height: 2.25;
+        margin: 20px 0;
+        @include mq(md){
+          margin: 80px 0;
+        }
+      }
+    }
+    &__button{
+      text-align: center;
+      &:first-child{
+        margin-bottom: 16px;
+        @include mq(md){
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}

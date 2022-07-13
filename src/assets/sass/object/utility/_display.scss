@@ -1,0 +1,14 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+.u-pc {
+  @include mq(md) {
+    display: none;
+  }
+}
+.u-sp {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}

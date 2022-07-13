@@ -1,0 +1,41 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+.p-main-visual{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 113.333vw;
+  background-image: url(/assets/img/main-visual_sp.jpg);
+  @include mq(md){
+    background-image: url(/assets/img/main-visual.jpg);
+    background-position: top right;
+    height: 100vh;
+  }
+  &__title-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    margin-right: 20px;
+    &__head{
+      font-size: clamp(16px, 2vw, 40px);
+      font-family: "Oooh baby";
+    }
+    &__copy{
+      font-family: $en-font;
+      font-size: clamp(50px, 1rem + 10vw, 200px);
+      font-weight: 700;
+      line-height: .95;
+      background: $accent-color;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &__sub-copy{
+      font-size: clamp(12px, 2vw, 32px);
+      font-weight: 700;
+      letter-spacing: $letter-spacing;
+    }
+  }
+}

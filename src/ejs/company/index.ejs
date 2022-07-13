@@ -1,0 +1,147 @@
+<%_
+  var rootPath = data.rootPath;
+  var pageData = data.pages.home;
+_%>
+<%- include("../_components/_head", { rootPath, pageData }) _%>
+<%- include("../_components/_header", { pageData }) _%>
+  <main class="l-main">
+    <!--メインビジュアル-->
+    <section class="p-sub-page-visual">
+      <h1 class="p-sub-page-visual__title--company">
+        <p class="p-sub-page-visual__title__en">COMPANY</p>
+        <p class="p-sub-page-visual__title__ja">会社概要</p>
+      </h1>
+      <div class="p-sub-page-visual__image-content">
+        <img src="/assets/img/top-company.jpg" alt="会社概要">
+      </div>
+    </section>
+    <!--丸あしらい-->
+    <%- include("../_components/_circle", { pageData }) _%>
+    <!--パンくずリスト-->
+    <nav class="p-breadcrumbs">
+      <div class="c-inner">
+        <ol class="p-breadcrumbs__list">
+          <li class="p-breadcrumbs__item">
+            <a href="/">ホーム</a>
+          </li>
+          <li class="p-breadcrumbs__item">
+            <a href="/company/">会社概要</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <!--メインコンテンツ-->
+    <section>
+      <div class="c-inner">
+        <section>
+          <h2 class="c-page-heading--center">会社概要</h2>
+          <table class="c-table c-page-content--small-margin">
+            <tbody>
+              <!--社名-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">社名</td>
+                <td class="c-table__data">株式会社マイナビワークス</td>
+              </tr>
+              <!--事業内容-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">事業内容</td>
+                <td class="c-table__data">
+                  <p>労働者派遣事業／派13-307111</p>
+                  <p>有料職業紹介事業／13-ユ-308164</p>
+                  <p>求人・採用活動に関するコンサルティング</p>
+                  <p>宣伝、広告、ピーアール業および広告代理店業</p>
+                  <p>ウェブコンテンツ、制作物等のデザインおよび制作業</p>
+                </td>
+              </tr>
+              <!--本社所在地-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">本社所在地</td>
+                <td class="c-table__data">
+                  <p>〒163-1527</p>
+                  <p>東京都新宿区西新宿1-6-1  <br class="u-pc">新宿エルタワー2</p>
+                </td>
+              </tr>
+              <!--本社電話番号-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">本社電話番号</td>
+                <td class="c-table__data">00-0000-0000</td>
+              </tr>
+              <!--代表者-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">代表者</td>
+                <td class="c-table__data">滝口 裕之</td>
+              </tr>
+              <!--設立-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">設立</td>
+                <td class="c-table__data">2016年12月1日</td>
+              </tr>
+              <!--創業-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">創業</td>
+                <td class="c-table__data">ここに説明文ここに説明文ここに説明文ここに説明文ここに説明文ここに説明文ここに説明文</td>
+              </tr>
+              <!--従業員数-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">従業員数</td>
+                <td class="c-table__data">448名（2022年4月時点）</td>
+              </tr>
+              <!--資本金-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">資本金</td>
+                <td class="c-table__data">1億円</td>
+              </tr>
+              <!--関連会社-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">関連会社</td>
+                <td class="c-table__data">株式会社マイナビ</td>
+              </tr>
+              <!--企業ホームページ-->
+              <tr class="c-table__row">
+                <td class="c-table__heading">企業ホームページ</td>
+                <td class="c-table__data">
+                  <a href="https://mynavi-works.jp">https://mynavi-works.jp</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!--アクセス-->
+        <section class="c-section">
+          <h2 class="c-page-heading--center">アクセス</h2>
+          <div class="c-page-content--small-margin">
+            <div class="p-access__main-office">
+              <h3 class="p-access__title">本社</h3>
+              <address class="p-access__address">
+                <p>〒163-1527 東京都新宿区西新宿1-6-1  <br class="u-pc">新宿エルタワー27F</p>
+              </address>
+              <div class="p-access__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3805189904083!2d139.69515846561214!3d35.69225263697424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd68df56c4d%3A0xc3672a603df69050!2z5qCq5byP5Lya56S-44Oe44Kk44OK44OT44Ov44O844Kv44K5!5e0!3m2!1sja!2sjp!4v1656989358048!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="p-access__way">
+              <h3 class="p-access__title">交通機関・最寄り駅</h3>
+              <ul class="p-access__items">
+                <li>○○線 ■■駅北口より　徒歩5分</li>
+                <li>●●線 ■■駅北口より　徒歩5分</li>
+                <li>▲▲線 ■■駅東口より　徒歩5分</li>
+                <li>××自動車道　△△ICより  5分</li>
+              </ul>
+            </div>
+            <div class="p-access__button">
+              <a href="/company/office" class="c-button">事業所一覧</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+     <!--採用情報--> 
+     <%- include("../_components/_recruit", { pageData }) _%>
+     <div class="l-main__line u-sp"></div>
+     <div class="l-main__line u-sp"></div>
+   </main>
+ <%- include("../_components/_footer", { pageData }) _%>
+ <%- include("../_components/_foot", { rootPath, pageData }) _%>

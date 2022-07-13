@@ -1,0 +1,22 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+$aligns: left, center, right;
+
+@each $align in $aligns {
+  .u-align {
+    &__#{$align} {
+      text-align: #{$align};
+      &--pc {
+        @include mq-above(lg) {
+          text-align: #{$align};
+        }
+      }
+      &--sp {
+        @include mq-below(lg) {
+          text-align: #{$align};
+        }
+      }
+    }
+  }
+}

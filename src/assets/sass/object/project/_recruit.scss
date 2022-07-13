@@ -1,0 +1,132 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+.p-recruit{
+  margin-top: 120px;
+  @include mq(md){
+    margin-top: 260px;
+  }
+  &__wrapper{
+    display: block;
+    margin-top: 80px;
+    @include mq(lg){
+      display: flex;
+    }
+    &__buttons{
+      width: 100%;
+      @include mq(lg){
+        width: 50%;
+      }
+     &__info{
+      color: #fff;
+      font-size: clamp(30px, 1rem + 3.125vw, 60px);
+      letter-spacing: $letter-spacing;
+      text-align: center;
+      background: $accent-color;
+      width: 100%;
+      position: relative;
+      padding: 80px;
+      @include mq(md){
+        max-height: 300px;
+        line-height: 300px;
+        padding: 0;
+
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 5%;
+        width: 24px;
+        height: 24px;
+        border-top: 5px solid #fff;
+        border-right: 5px solid #fff;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        @include mq(lg){
+          width: 32px;
+          height: 32px;
+        }
+      }
+     } 
+     &__flow{
+      color: #fff;
+      font-size: clamp(30px, 3.125vw, 60px);
+      letter-spacing: $letter-spacing;
+      text-align: center;
+      background:linear-gradient(to bottom right, #fe8a81, #ffbc6a);
+      width: 100%;
+      position: relative;
+      padding: 80px 0;
+      @include mq(md){
+        max-height: 300px;
+        line-height: 300px;
+        padding: 0;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 5%;
+        width: 24px;
+        height: 24px;
+        border-top: 5px solid #fff;
+        border-right: 5px solid #fff;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        @include mq(lg){
+          width: 32px;
+          height: 32px;
+        }
+      }
+     } 
+    }
+    &__entry{
+      width: 100%;
+      font-family: $en-font;
+      background: $sub-accent-color;
+      position: relative;
+      padding: 120px 60px;
+      @include mq(lg){
+        width: 50%;
+        height: 600px;
+        padding: 0;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        right: 5%;
+        width: 24px;
+        height: 24px;
+        margin: auto;
+        border-top: 5px solid #fff;
+        border-right: 5px solid #fff;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        @include mq(lg){
+          width: 48px;
+          height: 48px;
+        }
+      }
+      p{
+        color: #fff;
+        font-size:  clamp(50px, 1rem + 5.2083vw, 100px);
+        letter-spacing: $letter-spacing;
+        text-align: center;
+        justify-content: center;
+        @include mq(lg){
+          line-height: 600px;
+        }
+      }
+    }
+  }
+}

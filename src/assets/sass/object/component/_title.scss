@@ -1,0 +1,106 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+.c-title{
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    font-family: "Oooh baby";
+    font-size: clamp(10rem, 1rem + 13vw, 24rem);
+    font-weight: 500;
+    color: $main-color;
+    opacity: .15;
+    bottom: -16px;
+    z-index: -1;
+    left: 0;
+    @include mq(md){
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &--message{
+    @extend .c-title;
+    &::before{
+      content: "Message";
+    }
+  }
+  &--business{
+    @extend .c-title;
+    &::before{
+      content: "Business";
+      @include mq(md){
+        right: -60%;
+      }
+    }
+  } 
+  &--company{
+    @extend .c-title;
+    &::before{
+      content: "Company";
+    }
+  }
+  &--infographics{
+    @extend .c-title;
+    &::before{
+      content: "Infographics";
+      @include mq(md){
+        right: -60%;
+      }
+    }
+  } 
+  &--employee{
+    @extend .c-title;
+    &::before{
+      content: "Employee";
+      @include mq(md){
+        left: 20%;
+      }
+    }
+  }
+  &--culture{
+    @extend .c-title;
+    &::before{
+      content: "Culture";
+    }
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width:40px;
+    height: 2px;
+    background: $main-color;
+    bottom: -8px;
+    @include mq(md){
+      bottom: -16px;
+    }
+  }
+  &--recruit{
+    @extend .c-title;
+    text-align: center;
+    &::before{
+      content: "Recruit";
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::after{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__en-title{
+    font-family: $en-font;
+    font-size: clamp(30px, 5vw, 60px);
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: $main-color;
+  }
+  &__ja-title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 4px;
+    @include mq(md){
+      margin-top: 8px;
+    }
+  }
+}

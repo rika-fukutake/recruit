@@ -1,0 +1,97 @@
+<%_
+  var rootPath = data.rootPath;
+  var pageData = data.pages.home;
+_%>
+<%- include("../_components/_head", { rootPath, pageData }) _%>
+<%- include("../_components/_header", { pageData }) _%>
+  <main class="l-main">
+    <!--メインビジュアル-->
+    <section class="p-sub-page-visual">
+      <h1 class="p-sub-page-visual__title--employee">
+        <p class="p-sub-page-visual__title__en">EMPLOYEE</p>
+        <p class="p-sub-page-visual__title__ja">人を知る</p>
+      </h1>
+      <div class="p-sub-page-visual__image-content">
+        <img src="/assets/img/sub-visual-employee.jpg" alt="">
+      </div>
+    </section>
+    <!--丸あしらい-->
+    <%- include("../_components/_circle", { pageData }) _%>
+    <!--パンくずリスト-->
+    <nav class="p-breadcrumbs">
+      <div class="c-inner">
+        <ol class="p-breadcrumbs__list">
+          <li class="p-breadcrumbs__item">
+            <a href="/">ホーム</a>
+          </li>
+          <li class="p-breadcrumbs__item">
+            <a href="/employee/">社員紹介</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <!--メインコンテンツ-->
+    <section class="p-employee--bottom">
+      <div class="c-inner">
+        <ul class="p-employee__card-items">
+          <li class="p-employee__card-item">
+            <a href="/employee/employee01/">
+              <div class="p-employee__card-item__image">
+                <img src="/assets/img/emplyee_card-item_img01.jpg" alt="">
+              </div>
+              <span class="p-employee__card-item__position--01">総合職</span>
+              <div class="p-employee__card-item__body">
+                <p class="p-employee__card-item__body__year">2022年入社</p>
+                <div class="p-employee__card-item__body__name">
+                  <p class="p-employee__card-item__body__name__ja">田中 花子</p>
+                  <p class="p-employee__card-item__body__name__en">HANAKO TANAKA</p>
+                </div>
+                <p class="p-employee__card-item__body__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+              </div>
+            </a>
+          </li>
+          <li class="p-employee__card-item">
+            <a href="/employee/employee02/">
+              <div class="p-employee__card-item__image">
+                <img src="/assets/img/emplyee_card-item_img02.jpg" alt="">
+              </div>
+              <span class="p-employee__card-item__position--02">ディレクター</span>
+              <div class="p-employee__card-item__body">
+                <p class="p-employee__card-item__body__year">2022年入社</p>
+                <div class="p-employee__card-item__body__name">
+                  <p class="p-employee__card-item__body__name__ja">山田 太郎</p>
+                  <p class="p-employee__card-item__body__name__en">TARO YAMADA</p>
+                </div>
+                <p class="p-employee__card-item__body__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+              </div>
+            </a>
+          </li>
+          <li class="p-employee__card-item">
+            <a href="/employee/employee03/">
+              <div class="p-employee__card-item__image">
+                <img src="/assets/img/emplyee_card-item_img03.jpg" alt="">
+              </div>
+              <span class="p-employee__card-item__position--03">デザイナー</span>
+              <div class="p-employee__card-item__body">
+                <p class="p-employee__card-item__body__year">2022年入社</p>
+                <div class="p-employee__card-item__body__name">
+                  <p class="p-employee__card-item__body__name__ja">加藤 花子</p>
+                  <p class="p-employee__card-item__body__name__en">HANAKO KATO</p>
+                </div>
+                <p class="p-employee__card-item__body__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section> 
+
+
+    <!--採用情報--> 
+    <%- include("../_components/_recruit", { pageData }) _%>
+    <div class="l-main__line u-sp"></div>
+    <div class="l-main__line u-sp"></div>
+  </main>
+<%- include("../_components/_footer", { pageData }) _%>
+<%- include("../_components/_foot", { rootPath, pageData }) _%>

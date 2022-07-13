@@ -1,0 +1,185 @@
+@use "../foundation/variables" as *;
+@use "../foundation/mixins" as *;
+
+
+
+.l-header{
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background: rgb(255, 255, 255, 0.8);
+  letter-spacing: .06em;
+  &__inner{
+    max-width: 94.666%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mq(md){
+      height: 100px;
+    }
+    @include mq(xl){
+      max-width: 90%;
+    }
+  }
+  &__left{
+    display: flex;
+    align-items: center;
+  }
+  &__title{
+    @include mq(xl){
+    display: flex;
+    align-items: center;
+    }
+    display: block;
+  }
+  &__logo{
+    @include mq(lg){
+      width: 70px;
+    }
+    width: 32px;
+  }
+  &__main-title{
+    font-weight: 700;
+    font-size: 1.2rem ;
+    @include mq(xl){
+      font-size: 1.8rem;
+    }
+    @include p-vw(margin-left, 20);
+  }
+  &__sub-title{
+    font-family: $en-font;
+    @include mq(xl){
+      font-size: 1.6rem;
+    }
+    font-weight: 700;
+    color: $main-color;
+    font-size: 1.2rem ;
+    @include p-vw(margin-left, 20);
+    
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+  }
+  &__menu-items{
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 10px;
+    @include mq(lg){
+      font-size: 1.8rem;
+      gap: 40px;
+    }
+  
+  }
+  &__button{
+    position: relative;
+    font-family: $en-font;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .06em;
+    background: $sub-accent-color;
+    text-align: center;
+    border-radius: 45px;
+    font-size: 2rem;
+    height: 35px;
+    width: 120px;
+    line-height: 35px;
+    margin-left: max(2vw, 8px);
+    @include mq(md){
+      font-size: 3.2rem;
+      line-height: 70px;
+      height: 70px;
+      width: 40vw;
+      max-width: 240px;
+      min-width: 180px;
+    }
+     &::after{
+       content: "";
+       position: absolute;
+       top: 50%;
+       border-top: 2px solid #fff;
+       border-right: 2px solid #fff;
+       -webkit-transform: rotate(45deg);
+       transform: rotate(45deg) translateY(-50%);
+       right: 12px;
+       width: 10px;
+       height: 10px;
+       @include mq(md){
+        right: 24px;
+        width: 15px;
+        height: 15px;
+      }
+      }
+  }
+  &__humberger{
+   position: relative;
+   width: 30px;
+   margin-left: 12px;
+   &__line{
+    position: absolute;
+    right: 0;
+    height: 2px;
+    display: inline-block;
+    border-radius: 2px;
+    background: $main-color;
+      &:nth-of-type(1){
+        top: -8px;
+        width: 30px;
+      }
+      &:nth-of-type(2){
+        top: 0;
+        width: 25px;
+      }
+      &:nth-of-type(3){
+        top: 8px;
+        width: 20px;
+      }
+   } 
+  }
+  &__menu-items__sp{
+    display: none;
+    background: $accent-color;
+    width: 70vw;
+    height: 100vh;
+    color: #fff;
+    margin-left: auto;
+    padding: 0 20px;
+  }
+  &__menu-item__sp{
+    padding-top: 40px;
+    &__heading{
+      display: flex;
+      align-items: flex-end;
+      &__ja{
+        font-size: 2.4rem;
+      }
+      &__en{;
+        font-size: 1.4rem;
+        letter-spacing: .06em;
+        margin-left: 24px;
+      }
+    }
+    &__list{
+      font-size: $base-font-size;
+      li{
+        margin-top: 20px;
+        margin-left: 40px;
+        position: relative;
+        &::after{
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 2px;
+          background: #fff;
+          top: 50%;
+          transform: translateX(-50%);
+          left: -16px;
+        }
+      }
+    }
+  }
+}

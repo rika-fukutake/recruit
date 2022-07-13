@@ -1,0 +1,44 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+.c-button{
+  font-family: $en-font;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .12em;
+  border-radius: 45px;
+  background: $accent-color; 
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: min(72vw, 250px);
+  height: 60px;
+  line-height: 60px;
+  @include mq(md){
+    font-size: 32px;
+    width: min(42vw, 500px);
+    height: 80px;
+    line-height: 80px;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  &--small{
+    @extend .c-button;
+    @include mq(md){
+      width: max(100%, 280px);
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "0.2.0",
+  "description": "Boilerplate for creating static HTML sites",
+  "private": true,
+  "engines": {
+    "node": "16.14.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --config config/webpack.dev.js & npm run ejs",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js & npm run ejs",
+    "serve": "webpack serve --config config/webpack.dev.js",
+    "clean": "rd /s /q dist",
+    "eslint": "eslint --ext .js src/assets/js/",
+    "stylelint": "stylelint -f verbose src/assets/**/*.{css,scss}",
+    "eslint:format": "eslint --fix --ext .js -- src/assets/js/",
+    "stylelint:format": "stylelint --fix \"src/assets/**/*.{css,scss}\"",
+    "prettier": "prettier --check --write --loglevel=warn \"src/assets/**/*.{js,css,scss}\"",
+    "ejs": "node ./config/ejs.js",
+    "ejs:watch": "cross-env NODE_ENV=development onchange \"./src/ejs/**/*.ejs\" \"./src/assets/data/**/*.json\" -- npm run ejs",
+    "start": "cross-env NODE_ENV=development npm run ejs & run-p serve ejs:watch"
+  },
+  "author": "Mynavi Creative Factory",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.4",
+    "babel-loader": "^8.2.4",
+    "copy-webpack-plugin": "^10.2.4",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.6",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "glob": "^7.2.0",
+    "make-dir": "^3.1.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss-loader": "^6.2.1",
+    "prettier": "^2.6.2",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.49.11",
+    "sass-loader": "^12.6.0",
+    "stylelint": "^14.6.1",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

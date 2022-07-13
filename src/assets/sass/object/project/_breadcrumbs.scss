@@ -1,0 +1,46 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+.p-breadcrumbs{
+  font-size: 1.1rem;
+  letter-spacing: $letter-spacing;
+  margin-top: 8px;
+  margin-bottom: 60px;
+  @include mq(md){
+    font-size: 1.4rem;
+    margin-top: 16px;
+    margin-bottom: 260px;
+  }
+  &__list{
+    display: flex;
+    gap: 8px;
+    @include mq(md){
+      gap: 16px;
+    }
+  }
+  &__item{
+    &:not(:first-child){
+      position: relative;
+      padding-left: 16px;
+      @include mq(md){
+        padding-left: 32px;
+      }
+      &::before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        border-right: 1px solid #333;
+        border-top: 1px solid #333;
+        left: 0;
+        top: 50%;
+        transform: rotate(45deg) translateX(-50%);
+        width: 5px;
+        height: 5px;
+        @include mq(md){
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+  }
+}

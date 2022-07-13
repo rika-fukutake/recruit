@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+// Foundation
+@use "foundation/variables";
+@use "foundation/mixins";
+@use "foundation/reset";
+@use "foundation/base";
+
+// Layout
+@use "layout/header";
+@use "layout/footer";
+@use "layout/main";
+
+// Object
+//// component
+@use "object/component/button";
+@use "object/component/title";
+@use "object/component/inner";
+@use "object/component/section";
+@use "object/component/page-heading";
+@use "object/component/text-block";
+@use "object/component/text-content";
+@use "object/component/circle";
+@use "object/component/table";
+@use "object/component/page-content";
+
+//// project
+@use "object/project/main-visual";
+@use "object/project/lead";
+@use "object/project/message";
+@use "object/project/business";
+@use "object/project/company";
+@use "object/project/infographics";
+@use "object/project/employee";
+@use "object/project/culture";
+@use "object/project/recruit";
+@use "object/project/sub-page-visual";
+@use "object/project/breadcrumbs";
+@use "object/project/sub-message";
+@use "object/project/department-block";
+@use "object/project/page-department";
+@use "object/project/access";
+@use "object/project/office";
+@use "object/project/system";
+@use "object/project/tab";
+@use "object/project/flow";
+@use "object/project/faq-list";
+
+//// utility
+@use "object/utility/margin";
+@use "object/utility/display";
+

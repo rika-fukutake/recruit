@@ -1,0 +1,76 @@
+@use "../foundation/variables" as *;
+@use "../foundation/mixins" as *;
+
+.l-main{
+  position: relative;
+  &__line{
+    &::before{
+      position: absolute;
+      content: "";
+      background-color: $main-color;
+      width: 160px;
+      height: 2px;
+      top: 200px;
+      left: 0;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      z-index: -1;
+      @include mq(md){
+        width: 320px;
+        top: 500px;
+      }
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      background-color: $main-color;
+      width: 160px;
+      height: 2px;
+      top: 300px;
+      left: -40px;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      z-index: -1;
+      @include mq(md){
+        width: 320px;
+        top: 700px;
+      }
+    }
+    &:nth-of-type(2){
+      &::before{
+        top: auto;
+        bottom: 1200px;
+        left: auto;
+        right: 0;
+      }
+      &::after{
+        top: auto;
+        bottom: 1000px;
+        left: auto;
+        right: 40px;
+      }
+    }
+    &--bold{
+      content: "";
+      position: absolute;
+      width: 1560px;
+      height: 20px;
+      background: $accent-color;
+      top: 400px;
+      right: 0;
+      transform: rotate(-45deg);
+      z-index: -10;
+      opacity: .4;
+      transform-origin: right center;
+      &:nth-of-type(2){
+        background: $sub-accent-color;
+        top: 3500px;
+        left: 0;
+        transform-origin: left center;
+      }
+      &:nth-of-type(3){
+        top: 3400px;
+      }
+    }
+  }
+}

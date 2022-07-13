@@ -1,0 +1,95 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+.p-faq-list{
+  &__q{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 20px;
+    background: $sub-color;
+    box-shadow: $box-shadow;
+    position: relative;
+    @include mq(md){
+      font-size: 24px;
+      padding: 20px 40px;
+
+    }
+    &:not(:first-child){
+      margin-top: 20px;
+      @include mq(md){
+        margin-top: 40px;
+      }
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      background: $main-color;
+      width: 12px;
+      height: 2px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      @include mq(md){
+        width: 24px;
+        height: 4px;
+        right: 40px;
+
+      }
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      background: $main-color;
+      width: 2px;
+      height: 12px;
+      top: 50%;
+      right: 25px;
+      transform: translateY(-50%);
+      @include mq(md){
+        width: 4px;
+        height: 24px;
+        right: 50px;
+
+      }
+    }
+  }
+  &__icon{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 28px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $accent-color;
+    margin-right: 10px;
+    @include mq(md){
+      font-size: 4rem;
+      line-height: 55px;
+      width: 60px;
+      height: 60px;
+      margin-right: 40px;
+
+    }
+    &--answer{
+      @extend .p-faq-list__icon;
+      background: $sub-accent-color;
+    }
+  }
+  &__a{
+    display: flex;
+    box-shadow: $box-shadow;
+    padding: 20px;
+    background: #fff;
+    @include mq(md){
+      padding: 40px;
+    }
+    & p{
+      width: calc(100% - 30px);
+      @include mq(md){
+        width: calc(100% - 60px);
+      }
+    }
+  }
+}

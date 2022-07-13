@@ -1,0 +1,29 @@
+@use "variables";
+
+// Media Queries
+
+@mixin mq($breakpoint: md, $rule: min, $subtraction: false) {
+  $breakpoint: map-get(variables.$breakpoints, $breakpoint);
+  @if $rule == max and $subtraction {
+    $breakpoint: $breakpoint - 0.2;
+  }
+  @media (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}
+
+////pxをvwに変換するpaddingやmargin用
+@function _get_vw($size, $viewport: 1920) {
+  $rate: calc(100 / $viewport);
+  @return $rate * $size * 1vw;
+}
+//paddingやmargin用
+@mixin p-vw($property, $size, $viewsize: 1920) {
+  #{$property}: $size * 1px;
+  #{$property}: _get_vw($size, $viewsize);
+}
+//フォント用
+@mixin font-vw($font_size: 10, $viewsize: 1920) {
+  font-size: $font_size * 1px;
+  font-size: _get_vw($font_size, $viewsize);
+}

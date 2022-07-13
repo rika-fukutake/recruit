@@ -1,0 +1,64 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+.p-office{
+  &__item{
+    display: block;
+    padding: 30px 0;
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+    @include mq(md){
+      display: flex;
+      padding: 40px 0;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid $main-color;
+      width: 560px;
+      bottom: -1px;
+      left: 0;
+    }
+  }
+  &__contents{
+    width: 100%;
+    @include mq(md){
+      width: 50%;
+      padding-right: 40px;
+    }
+    &__address{
+      font-size: 1.6rem;
+      margin-top: 20px;
+      @include mq(md){
+        margin-top: 40px;
+      }
+      p{
+        letter-spacing: .1em;
+        line-height: 2;
+        @include mq(md){
+          line-height: 3;
+        }
+      }
+    }
+  }
+  &__map-wrap{
+    flex: 1;
+    margin-top: 20px;
+    @include mq(md){
+      margin-top: 0;
+    }
+  }
+  &__map{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    & iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

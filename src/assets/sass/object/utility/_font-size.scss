@@ -1,0 +1,11 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+$fs-min: 10;
+$fs-max: 40;
+
+@for $i from $fs-min through $fs-max {
+  .u-fz#{$i} {
+    font-size: #{$i / 10}rem;
+  }
+}

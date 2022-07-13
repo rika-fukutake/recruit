@@ -1,0 +1,199 @@
+<%_
+  var rootPath = data.rootPath;
+  var pageData = data.pages.home;
+_%>
+<%- include("../_components/_head", { rootPath, pageData }) _%>
+<%- include("../_components/_header", { pageData }) _%>
+  <main class="l-main">
+    <!--メインビジュアル-->
+    <section class="p-sub-page-visual">
+      <h1 class="p-sub-page-visual__title--flow-faq">
+        <p class="p-sub-page-visual__title__en">FLOW・FAQ</p>
+        <p class="p-sub-page-visual__title__ja">選考フロー・FAQ</p>
+      </h1>
+      <div class="p-sub-page-visual__image-content">
+        <img src="/assets/img/flow-faq.jpg" alt="選考フロー・FAQ">
+      </div>
+    </section>
+     <!--丸あしらい-->
+     <%- include("../_components/_circle", { pageData }) _%>
+    <!--パンくずリスト-->
+    <nav class="p-breadcrumbs">
+      <div class="c-inner">
+        <ol class="p-breadcrumbs__list">
+          <li class="p-breadcrumbs__item">
+            <a href="/index.html">ホーム</a>
+          </li>
+          <li class="p-breadcrumbs__item">
+            <a href="/flow-faq/">選考フロー・FAQ</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <!--メインコンテンツ-->
+    <section>
+      <div class="c-inner">
+        <!--選考フロー-->
+        <section>
+          <h2 class="c-page-heading--center">選考フロー</h2>
+          <div class="c-text-block c-page-content">
+            <p>
+              ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+            </p>
+          </div>
+          <ul class="p-flow__list c-page-content">
+            <li class="p-flow__item">
+              <div class="p-flow__item__wrapper">
+                <div class="p-flow__number">01</div>
+                <div class="p-flow__body">
+                  <h3 class="c-page-heading--small">エントリー</h3>
+                  <p class="c-text-block">
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    ダミーテキストダミーテキストダミーテキストダミーテキスト
+                  </p>
+                </div>
+              </div>
+              <div class="p-flow__arrow"></div>
+            </li>
+            <li class="p-flow__item">
+              <div class="p-flow__item__wrapper">
+                <div class="p-flow__number">02</div>
+                <div class="p-flow__body">
+                  <h3 class="c-page-heading--small">ダミーテキスト</h3>
+                  <p class="c-text-block">
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    ダミーテキストダミーテキストダミーテキストダミーテキスト
+                  </p>
+                </div>
+              </div>
+              <div class="p-flow__arrow"></div>
+            </li>
+            <li class="p-flow__item">
+              <div class="p-flow__item__wrapper">
+                <div class="p-flow__number">03</div>
+                <div class="p-flow__body">
+                  <h3 class="c-page-heading--small">ダミーテキスト</h3>
+                  <p class="c-text-block">
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    ダミーテキストダミーテキストダミーテキストダミーテキスト
+                  </p>
+                </div>
+              </div>
+              <div class="p-flow__arrow"></div>
+            </li>
+            <li class="p-flow__item">
+              <div class="p-flow__item__wrapper">
+                <div class="p-flow__number">04</div>
+                <div class="p-flow__body">
+                  <h3 class="c-page-heading--small">ダミーテキスト</h3>
+                  <p class="c-text-block">
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    ダミーテキストダミーテキストダミーテキストダミーテキスト
+                  </p>
+                </div>
+              </div>
+              <div class="p-flow__arrow"></div>
+            </li>
+            <li class="p-flow__item">
+              <div class="p-flow__item__wrapper">
+                <div class="p-flow__number">05</div>
+                <div class="p-flow__body">
+                  <h3 class="c-page-heading--small">ダミーテキスト</h3>
+                  <p class="c-text-block">
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    ダミーテキストダミーテキストダミーテキストダミーテキスト
+                  </p>
+                </div>
+              </div>
+              <div class="p-flow__arrow"></div>
+            </li>
+            <li class="p-flow__item">
+              <div class="p-flow__item__wrapper">
+                <div class="p-flow__number">06</div>
+                <div class="p-flow__body">
+                  <h3 class="c-page-heading--small">ダミーテキスト</h3>
+                  <p class="c-text-block">
+                    ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                    ダミーテキストダミーテキストダミーテキストダミーテキスト
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!--よくある質問-->
+        <section>
+          <h2 class="c-page-heading--center c-section">よくある質問</h2>
+          <dl class="p-faq-list c-page-content">
+            <!--1-->
+            <dt class="p-faq-list__q">
+              <span class="p-faq-list__icon">Q</span>
+              <p>ここによくある質問を記載する</p>
+            </dt>
+            <dd class="p-faq-list__a">
+              <span class="p-faq-list__icon--answer">A</span>
+              <p class="c-text-block">
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                ダミーテキストダミーテキストダミーテキストダミーテキスト
+              </p>
+            </dd>
+            <!--2-->
+            <dt class="p-faq-list__q">
+              <span class="p-faq-list__icon">Q</span>
+              <p>ここによくある質問を記載する</p>
+            </dt>
+            <dd class="p-faq-list__a">
+              <span class="p-faq-list__icon--answer">A</span>
+              <p class="c-text-block">
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                ダミーテキストダミーテキストダミーテキストダミーテキスト
+              </p>
+            </dd>
+            <!--3-->
+            <dt class="p-faq-list__q">
+              <span class="p-faq-list__icon">Q</span>
+              <p>ここによくある質問を記載する</p>
+            </dt>
+            <dd class="p-faq-list__a">
+              <span class="p-faq-list__icon--answer">A</span>
+              <p class="c-text-block">
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                ダミーテキストダミーテキストダミーテキストダミーテキスト
+              </p>
+            </dd>
+            <!--4-->
+            <dt class="p-faq-list__q">
+              <span class="p-faq-list__icon">Q</span>
+              <p>ここによくある質問を記載する</p>
+            </dt>
+            <dd class="p-faq-list__a">
+              <span class="p-faq-list__icon--answer">A</span>
+              <p class="c-text-block">
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                ダミーテキストダミーテキストダミーテキストダミーテキスト
+              </p>
+            </dd>
+          </dl>
+        </section>
+      </div>
+    </section>
+
+     <!--採用情報--> 
+     <%- include("../_components/_recruit", { pageData }) _%>
+     <span class="l-main__line--bold"></span>
+     <span class="l-main__line--bold"></span>
+     <span class="l-main__line--bold"></span>
+  
+   </main>
+ <%- include("../_components/_footer", { pageData }) _%>
+ <%- include("../_components/_foot", { rootPath, pageData }) _%>

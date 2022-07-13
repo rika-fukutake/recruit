@@ -1,0 +1,21 @@
+$breakpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1536px,
+);
+$escaped-characters: (("<", "%3c"), (">", "%3e"), ("#", "%23"), ("(", "%28"), (")", "%29"));
+
+$en-font:"Alegreya Sans SC",sans-serif;
+$font-color:#333333;
+$main-color:#ff9933;
+$sub-color:#fff6eb;
+$accent-color:(
+   linear-gradient(to bottom right, #ff7166, #ff9933));
+$sub-accent-color:(
+   linear-gradient(to bottom right, #1fd0b1, #29fdd8));
+$content-width: 1200px;
+$letter-spacing: .15em;
+$base-font-size: 1.6rem;
+$box-shadow: 0 0 20px rgba(58, 28, 1, 0.05)

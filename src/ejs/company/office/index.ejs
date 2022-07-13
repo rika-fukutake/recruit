@@ -1,0 +1,104 @@
+<%_
+  var rootPath = data.rootPath;
+  var pageData = data.pages.home;
+_%>
+<%- include("../../_components/_head", { rootPath, pageData }) _%>
+<%- include("../../_components/_header", { pageData }) _%>
+  <main class="l-main">
+    <!--メインビジュアル-->
+    <section class="p-sub-page-visual">
+      <h1 class="p-sub-page-visual__title--office">
+        <p class="p-sub-page-visual__title__en">
+          OFFICE
+        <p class="p-sub-page-visual__title__ja">事業所一覧</p>
+      </h1>
+      <div class="p-sub-page-visual__image-content">
+        <img src="/assets/img/office.jpg" alt="事業所一覧">
+      </div>
+    </section>
+    <!--丸あしらい-->
+    <%- include("../../_components/_circle", { pageData }) _%>
+    <!--パンくずリスト-->
+    <nav class="p-breadcrumbs">
+      <div class="c-inner">
+        <ol class="p-breadcrumbs__list">
+          <li class="p-breadcrumbs__item">
+            <a href="/index.html">ホーム</a>
+          </li>
+          <li class="p-breadcrumbs__item">
+            <a href="/company/">会社概要</a>
+          </li>
+          <li class="p-breadcrumbs__item">
+            <a href="/company/office">事業所一覧</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <!--事業所一覧-->
+    <section>
+      <div class="c-inner">
+        <h2 class="c-page-heading--center">事業所一覧</h2>
+          <ul class="p-office__items c-page-content--small-margin">
+            <li class="p-office__item">
+              <div class="p-office__contents">
+                <h3 class="c-page-heading--small">仙台オフィス</h3>
+                <address class="p-office__contents__address">
+                  <p>〒000-0000</p>
+                  <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                  </p>
+                  <p>TEL:012-345-6789</p>
+                </address>
+              </div>
+              <div class="p-office__map-wrap">
+                <div class="p-office__map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3818312586313!2d139.69508431561215!3d35.692220336975915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd68df56c4d%3A0xc3672a603df69050!2z5qCq5byP5Lya56S-44Oe44Kk44OK44OT44Ov44O844Kv44K5!5e0!3m2!1sja!2sjp!4v1656995459173!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </li>
+            <li class="p-office__item">
+              <div class="p-office__contents">
+                <h3 class="c-page-heading--small">東京オフィス</h3>
+                <address class="p-office__contents__address">
+                  <p>〒000-0000</p>
+                  <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                  </p>
+                  <p>TEL:012-345-6789</p>
+                </address>
+              </div>
+              <div class="p-office__map-wrap">
+                <div class="p-office__map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3818312586313!2d139.69508431561215!3d35.692220336975915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd68df56c4d%3A0xc3672a603df69050!2z5qCq5byP5Lya56S-44Oe44Kk44OK44OT44Ov44O844Kv44K5!5e0!3m2!1sja!2sjp!4v1656995459173!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </li>
+            <li class="p-office__item">
+              <div class="p-office__contents">
+                <h3 class="c-page-heading--small">名古屋オフィス</h3>
+                <address class="p-office__contents__address">
+                  <p>〒000-0000</p>
+                  <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                  </p>
+                  <p>TEL:012-345-6789</p>
+                </address>
+              </div>
+              <div class="p-office__map-wrap">
+                <div class="p-office__map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3818312586313!2d139.69508431561215!3d35.692220336975915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd68df56c4d%3A0xc3672a603df69050!2z5qCq5byP5Lya56S-44Oe44Kk44OK44OT44Ov44O844Kv44K5!5e0!3m2!1sja!2sjp!4v1656995459173!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </li>
+          </ul>
+      </div>
+    </section>
+    
+ 
+
+
+    <!--採用情報--> 
+    <%- include("../../_components/_recruit", { pageData }) _%>
+    <div class="l-main__line u-sp"></div>
+    <div class="l-main__line u-sp"></div>
+  </main>
+<%- include("../../_components/_footer", { pageData }) _%>
+<%- include("../../_components/_foot", { rootPath, pageData }) _%>

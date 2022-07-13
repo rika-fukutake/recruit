@@ -1,0 +1,108 @@
+<%_
+  var rootPath = data.rootPath;
+  var pageData = data.pages.home;
+_%>
+<%- include("../_components/_head", { rootPath, pageData }) _%>
+<%- include("../_components/_header", { pageData }) _%>
+  <main class="l-main">
+    <!--メインビジュアル-->
+    <section class="p-sub-page-visual">
+      <h1 class="p-sub-page-visual__title--support">
+        <p class="p-sub-page-visual__title__en">SUPPORT</p>
+        <p class="p-sub-page-visual__title__ja">教育研修制度</p>
+      </h1>
+      <div class="p-sub-page-visual__image-content">
+        <img src="/assets/img/support.jpg" alt="教育研修制度">
+      </div>
+    </section>
+     <!--丸あしらい-->
+     <%- include("../_components/_circle", { pageData }) _%>
+    <!--パンくずリスト-->
+    <nav class="p-breadcrumbs">
+      <div class="c-inner">
+        <ol class="p-breadcrumbs__list">
+          <li class="p-breadcrumbs__item">
+            <a href="/index.html">ホーム</a>
+          </li>
+          <li class="p-breadcrumbs__item">
+            <a href="/support/">教育研修制度</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <!--メインコンテンツ-->
+    <section>
+      <div class="c-inner">
+        <!--リード-->
+        <div class="c-text-block">
+          <p>
+            ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+            ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+            ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+            ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          </p>
+        </div>
+
+        <!--教育研修制度-->
+        <div class="p-system c-section">
+          <!--1-->
+          <div class="p-system__item">
+            <div class="p-system__image">
+              <img src="/assets/img/support-content01.jpg" alt="教育研修制度01">
+            </div>
+            <div class="p-system__contents">
+              <h2 class="c-page-heading--small c-page-heading__line">ここに制度名</h2>
+              <p class="p-system__text c-text-block">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキス
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミー</p>
+            </div>
+          </div>
+
+          <!--2-->
+          <div class="p-system__item">
+            <div class="p-system__image">
+              <img src="/assets/img/support-content02.jpg" alt="教育研修制度01">
+            </div>
+            <div class="p-system__contents">
+              <h2 class="c-page-heading--small c-page-heading__line">ここに制度名</h2>
+              <p class="p-system__text c-text-block">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキス
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミー</p>
+            </div>
+          </div>
+
+          <!--3-->
+          <div class="p-system__item">
+            <div class="p-system__image">
+              <img src="/assets/img/support-content01.jpg" alt="教育研修制度01">
+            </div>
+            <div class="p-system__contents">
+              <h2 class="c-page-heading--small c-page-heading__line">ここに制度名</h2>
+              <p class="p-system__text c-text-block">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキス
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミー</p>
+            </div>
+          </div>
+
+          <!--4-->
+          <div class="p-system__item">
+            <div class="p-system__image">
+              <img src="/assets/img/support-content02.jpg" alt="教育研修制度01">
+            </div>
+            <div class="p-system__contents">
+              <h2 class="c-page-heading--small c-page-heading__line">ここに制度名</h2>
+              <p class="p-system__text c-text-block">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキス
+                ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミー</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--採用情報--> 
+    <%- include("../_components/_recruit", { pageData }) _%>
+    <div class="l-main__line--bold"></div>
+    <div class="l-main__line--bold"></div>
+    <div class="l-main__line--bold"></div>
+ 
+  </main>
+<%- include("../_components/_footer", { pageData }) _%>
+<%- include("../_components/_foot", { rootPath, pageData }) _%>

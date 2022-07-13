@@ -1,0 +1,25 @@
+{
+  "home": {
+    "meta": {
+      "robots": "index, follow",
+      "title": "ホーム",
+      "description": "",
+      "og": {
+        "type": "website",
+        "title": "",
+        "description": "",
+        "url": "",
+        "image": "",
+        "siteName": ""
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "site": ""
+      },
+      "fb": {
+        "appID": ""
+      },
+      "canonical": ""
+    }
+  }
+}

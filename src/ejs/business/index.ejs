@@ -1,0 +1,114 @@
+<%_
+  var rootPath = data.rootPath;
+  var pageData = data.pages.home;
+_%>
+<%- include("../_components/_head", { rootPath, pageData }) _%>
+<%- include("../_components/_header", { pageData }) _%>
+  <main class="l-main">
+    <!--メインビジュアル-->
+    <section class="p-sub-page-visual">
+      <h1 class="p-sub-page-visual__title--business">
+        <p class="p-sub-page-visual__title__en">BUSINESS</p>
+        <p class="p-sub-page-visual__title__ja">仕事を知る</p>
+      </h1>
+      <div class="p-sub-page-visual__image-content">
+        <img src="/assets/img/top-business.jpg" alt="">
+      </div>
+    </section>
+    <!--丸あしらい-->
+    <%- include("../_components/_circle", { pageData }) _%>
+    <!--パンくずリスト-->
+    <nav class="p-breadcrumbs">
+      <div class="c-inner">
+        <ol class="p-breadcrumbs__list">
+          <li class="p-breadcrumbs__item">
+            <a href="">ホーム</a>
+          </li>
+          <li class="p-breadcrumbs__item">
+            <a href="">仕事を知る</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+    
+    <!--コンテンツ-->
+    <section class="p-sub-business">
+      <div class="c-inner">
+        <!--テキストコンテンツ-->
+        <section class="p-sub-business__text-content">
+          <h2 class="c-page-heading">
+            ここにタイトル <br>
+            （まず何をしている企業なのかここで記載する）
+          </h2>
+          <div class="c-text-block c-text-content">
+            <p>
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。
+            </p>
+            <p>
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+            </p>
+          </div>
+        </section>
+
+        <!--部門紹介-->
+        <section class="p-department-block c-section">
+          <h2 class="c-page-heading--center">各部門紹介</h2>
+          <ul class="p-department-block__card-items">
+            <li class="p-department-block__card-item">
+              <div class="p-department-block__card-item__image">
+                <img src="/assets/img/department-block1.jpg" alt="">
+              </div>
+              <div class="p-department-block__card-item__body">
+                <h3 class="p-department-block__card-item__body__title">営業部</h3>
+                <p class="p-department-block__card-item__body__text">
+                  ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキスト。</p>
+                <div class="p-department-block__card-item__body__button c-button--small">
+                  <a href="/business/business01/">VIEW MORE</a>
+                </div>
+              </div>
+            </li>
+            <li class="p-department-block__card-item">
+              <div class="p-department-block__card-item__image">
+                <img src="/assets/img/department-block2.jpg" alt="">
+              </div>
+              <div class="p-department-block__card-item__body">
+                <h3 class="p-department-block__card-item__body__title">企画部</h3>
+                <p class="p-department-block__card-item__body__text">
+                  ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキスト。
+                </p>
+                <div class="p-department-block__card-item__body__button c-button--small">
+                  <a href="/business/business02/">VIEW MORE</a>
+                </div>
+              </div>
+            </li>
+            <li class="p-department-block__card-item">
+              <div class="p-department-block__card-item__image">
+                <img src="/assets/img/department-block3.jpg" alt="">
+              </div>
+              <div class="p-department-block__card-item__body">
+                <h3 class="p-department-block__card-item__body__title">管理部</h3>
+                <p class="p-department-block__card-item__body__text">
+                  ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキスト。
+                </p>
+                <div class="p-department-block__card-item__body__button c-button--small">
+                  <a href="/business/business03/">VIEW MORE</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+
+    <!--採用情報--> 
+    <%- include("../_components/_recruit", { pageData }) _%>
+    <div class="l-main__line u-sp"></div>
+    <div class="l-main__line u-sp"></div>
+  </main>
+<%- include("../_components/_footer", { pageData }) _%>
+<%- include("../_components/_foot", { rootPath, pageData }) _%>

@@ -1,0 +1,50 @@
+<%_
+  var rootPath = data.rootPath;
+  var pageData = data.pages.home;
+_%>
+<%- include("../_components/_head", { rootPath, pageData }) _%>
+<%- include("../_components/_header", { pageData }) _%>
+  <main class="l-main">
+    <!--メインビジュアル-->
+    <section class="p-sub-page-visual">
+      <h1 class="p-sub-page-visual__title--privacy-policy">
+        <p class="p-sub-page-visual__title__en">
+          Privacy
+          <br>
+          Policy
+        </p>
+        <p class="p-sub-page-visual__title__ja">プライバシーポリシー</p>
+      </h1>
+      <div class="p-sub-page-visual__image-content">
+        <img src="/assets/img/privacy-policy.jpg" alt="ロゴ">
+      </div>
+    </section>
+     <!--丸あしらい-->
+     <%- include("../_components/_circle", { pageData }) _%>
+    <!--パンくずリスト-->
+    <nav class="p-breadcrumbs">
+      <div class="c-inner">
+        <ol class="p-breadcrumbs__list">
+          <li class="p-breadcrumbs__item">
+            <a href="/index.html">ホーム</a>
+          </li>
+          <li class="p-breadcrumbs__item">
+            <a href="/messege/">プライバシーポリシー</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <section>
+      <div class="c-inner">
+        <h2 class="c-page-heading--small">個人情報取り扱いに関する基本方針</h2>
+      </div>
+    </section>
+
+        <!--採用情報--> 
+        <%- include("../_components/_recruit", { pageData }) _%>
+        <div class="l-main__line u-sp"></div>
+        <div class="l-main__line u-sp"></div>
+      </main>
+    <%- include("../_components/_footer", { pageData }) _%>
+    <%- include("../_components/_foot", { rootPath, pageData }) _%>

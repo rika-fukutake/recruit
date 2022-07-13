@@ -1,0 +1,30 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixins" as *;
+
+.c-circle{
+  font-family: $en-font;
+  position: absolute;
+  width: 13.54vw;
+  height: 13.54vw;
+  min-width: 130px;
+  min-height: 130px;
+  font-size: 12.6px;
+  top: 380px;
+  right: 30px;
+  @include mq(md){
+    top: 500px;
+    right: 80px;
+  }
+  &__svg{
+    overflow: visible;
+  }
+  path{
+    fill: none;
+  }
+  text{
+    fill: #333;
+    opacity: .7;
+    letter-spacing: .18em;
+    
+  }
+}

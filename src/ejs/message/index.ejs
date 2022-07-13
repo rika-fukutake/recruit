@@ -1,0 +1,114 @@
+<%_
+  var rootPath = data.rootPath;
+  var pageData = data.pages.home;
+_%>
+<%- include("../_components/_head", { rootPath, pageData }) _%>
+<%- include("../_components/_header", { pageData }) _%>
+  <main class="l-main">
+    <!--メインビジュアル-->
+    <section class="p-sub-page-visual">
+      <h1 class="p-sub-page-visual__title--message">
+        <p class="p-sub-page-visual__title__en">MESSAGE</p>
+        <p class="p-sub-page-visual__title__ja">メッセージ</p>
+      </h1>
+      <div class="p-sub-page-visual__image-content">
+        <img src="/assets/img/sub-visual-message.jpg" alt="">
+      </div>
+    </section>
+     <!--丸あしらい-->
+     <%- include("../_components/_circle", { pageData }) _%>
+    <!--パンくずリスト-->
+    <nav class="p-breadcrumbs">
+      <div class="c-inner">
+        <ol class="p-breadcrumbs__list">
+          <li class="p-breadcrumbs__item">
+            <a href="/index.html">ホーム</a>
+          </li>
+          <li class="p-breadcrumbs__item">
+            <a href="/messege/">メッセージ</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+
+    <!--1-->
+    <section class="p-sub-message">
+      <div class="c-inner">
+        <div class="p-sub-message__image-content">
+          <img src="/assets/img/message-first-content.jpg" alt="">
+        </div>
+        <div class="p-sub-message__profile">
+          <p class="p-sub-message__profile__company">株式会社マイナビワークス</p>
+          <p class="p-sub-message__profile__position">代表取締役社長</p>
+          <p class="p-sub-message__profile__name">山田 太郎</p>
+        </div>
+        <div class="p-sub-message__first-content">
+          <h2 class="c-page-heading">
+            ここにメインタイトル(代表メッセージ、<br>
+            採用担当者より、求職者の方へetc...)
+          </h2>
+          <div class="c-text-block c-text-content">
+            <p>
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。
+            </p>
+            <p>
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。
+            </p>
+            <p>
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。
+            </p>
+            <p>
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。
+            </p>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <!--2-->
+    <section class="p-sub-message__second-content c-section">
+      <div class="c-inner">
+        <div class="p-sub-message__second-content__wrapper">
+          <div class="p-sub-message__second-content__image-content">
+            <img src="/assets/img/message-second-content.jpg" alt="">
+          </div>
+          <div class="p-sub-message__second-content__text-area">
+            <div class="p-sub-message__second-content__text-area__heading">ここにメインタイトル(代表メッセージ、採用担当者より、求職者の方へetc...)</div>
+            <p class="p-sub-message__second-content__text-area__text">
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+            </p>
+            <p class="p-sub-message__second-content__text-area__text">
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+            </p>
+            <p class="p-sub-message__second-content__text-area__text">
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+              ダミーテキストが入ります。ダミーテキストが入ります。ダミーテキストが入ります。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--採用情報--> 
+    <%- include("../_components/_recruit", { pageData }) _%>
+    <div class="l-main__line u-sp"></div>
+    <div class="l-main__line u-sp"></div>
+  </main>
+<%- include("../_components/_footer", { pageData }) _%>
+<%- include("../_components/_foot", { rootPath, pageData }) _%>
